@@ -14,7 +14,7 @@ const PORT = process.env.PORT;
 const bancoDeDados = knex ({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
+      host : 'postgresql-dimensional-73641',
       user : 'postgres',
       password : 'tcjnsj13',
       database : 'reim'
