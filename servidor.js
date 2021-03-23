@@ -13,9 +13,9 @@ const PORT = process.env.PORT;
 
 const bancoDeDados = knex ({
     client: 'pg',
-    connection: {
-      connectionString : process.env.DATABASE_URL,
-      ssl: true
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false
     }
 });
 
