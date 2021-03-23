@@ -33,4 +33,4 @@ app.get('/perfil/:id', perfil.manipularPerfil(bancoDeDados));
 app.put('/imagem', imagem.manipularImagem(bancoDeDados));
 app.post('/urlDaImagem', (req, res) => { imagem.manipulatChamadaDaAPI(req, res) });
 
-app.listen(3000, ()=> { console.log("Servidor Funcionando!"); })
+app.listen(process.env.PORT || 3000, ()=> { console.log("Servidor Funcionando!"); })
