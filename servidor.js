@@ -26,7 +26,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors())
 
-app.get('/', (req, res) => { res.send(bd.usuários); })
+app.get('/', (req, res) => { res.send("Está funcionando!"); })
 app.post('/entrar', entrar.manipularLogin(bancoDeDados, bcrypt));
 app.post('/registrar', registrar.manipularRegistro(bancoDeDados, bcrypt));
 app.get('/perfil/:id', perfil.manipularPerfil(bancoDeDados));
